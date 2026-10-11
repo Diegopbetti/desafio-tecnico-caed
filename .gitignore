@@ -2,5 +2,6 @@
 venv/
 __pycache__/
 *.py[cod]
-.ipynb_checkpoints/
 .pytest_cache/
+.ipynb_checkpoints/
+.codegraph/
