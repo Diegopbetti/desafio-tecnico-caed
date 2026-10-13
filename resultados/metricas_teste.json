@@ -1,0 +1,39 @@
+{
+  "Ensino Fundamental I": {
+    "precision": 0.7884615384615384,
+    "recall": 0.9318181818181818,
+    "f1-score": 0.8541666666666666,
+    "support": 44.0
+  },
+  "Ensino Fundamental II": {
+    "precision": 0.9444444444444444,
+    "recall": 0.7083333333333334,
+    "f1-score": 0.8095238095238095,
+    "support": 48.0
+  },
+  "Ensino Médio": {
+    "precision": 0.9183673469387755,
+    "recall": 0.967741935483871,
+    "f1-score": 0.9424083769633508,
+    "support": 93.0
+  },
+  "Ensino Superior": {
+    "precision": 0.9754098360655737,
+    "recall": 0.967479674796748,
+    "f1-score": 0.9714285714285714,
+    "support": 123.0
+  },
+  "accuracy": 0.922077922077922,
+  "macro avg": {
+    "precision": 0.906670791477583,
+    "recall": 0.8938432813580335,
+    "f1-score": 0.8943818561455996,
+    "support": 308.0
+  },
+  "weighted avg": {
+    "precision": 0.9266532926201712,
+    "recall": 0.922077922077922,
+    "f1-score": 0.9206823686161756,
+    "support": 308.0
+  }
+}
