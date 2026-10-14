@@ -5,3 +5,10 @@ __pycache__/
 .pytest_cache/
 .ipynb_checkpoints/
 .codegraph/
+
+# Configurações locais de ferramentas e editor
+/.claude/
+/.codex/
+/.vscode/
+/.mcp.json
+/AGENTS.md
