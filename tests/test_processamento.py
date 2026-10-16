@@ -1,6 +1,10 @@
 import unicodedata
 import pytest
-from processamento import eh_canonica, extrair_caracteristicas, limpar_texto
+from processamento import (
+    eh_canonica,
+    extrair_caracteristicas,
+    limpar_texto,
+)
 
 
 @pytest.mark.parametrize("palavra", ["cabeça", "canela", "janela", "luta", "sopa"])

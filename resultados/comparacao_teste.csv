@@ -1,0 +1,3 @@
+modelo,unidade,acuracia,f1_macro,f1_ponderado
+documento_completo,documento completo,0.935064935064935,0.9162824895294408,0.9338961858848221
+metodo_anterior_trechos,votação de até 3 trechos/documento,0.8863636363636364,0.8634383720401175,0.883855712208423
