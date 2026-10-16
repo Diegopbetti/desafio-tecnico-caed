@@ -58,7 +58,7 @@ Dois textos externos enviados como exemplos, um esperado como Ensino Médio (258
 
 O dicionário manual contém 486 formas de origem, incluindo flexões de gênero, número e alguns verbos conjugados. Ele inclui, por exemplo, `feliz/alegre`, `bonito/belo`, `cansado/fatigado`, `bom/ótimo` e `longo/extenso`. Uma regra contextual trata `calma` como adjetivo em construções como “a menina estava muito calma”; como substantivo em “mantenha a calma”, ela não é alterada. Na interface, o limite padrão é cinco palavras, configurável até dez; capitalização e pontuação são preservadas.
 
-Na amostra reproduzível de 100 documentos da validação, todos receberam ao menos uma substituição. Nenhuma das variantes alteradas mudou a classe estimada. O experimento permite até duas trocas por documento. Cobertura e mudança de classe são medições do vocabulário e das previsões do modelo; não medem correção semântica ou gramatical. Revise as variantes, pois uma substituição pode alterar a nuance.
+Na amostra reproduzível de 100 documentos da validação, todos receberam duas substituições. Em 1 dos 100 documentos alterados (1%), a classe estimada mudou; nos outros 99, permaneceu igual. O experimento permite até duas trocas por documento. Cobertura e mudança de classe são medições do vocabulário e das previsões do modelo; não medem correção semântica ou gramatical. Revise as variantes, pois uma substituição pode alterar a nuance.
 
 ## Limitações e próximos passos
 
@@ -69,3 +69,5 @@ Próximos passos úteis são obter exemplos curtos rotulados por especialistas, 
 ## Reprodutibilidade
 
 `treinar.py` é a implementação canônica. Ele audita e divide o dataset, treina com documentos completos, compara com a estratégia anterior em nível de documento, avalia no teste e grava o modelo em `modelos/modelo.joblib` e as evidências em `resultados/`. Execute `python treinar.py` na raiz do projeto para reproduzir o treinamento; a semente padrão é 42. `treino.ipynb` apresenta as etapas e os resultados do mesmo pipeline.
+
+Na revisão final, os 29 testes automatizados passaram. A aplicação pode ser executada com o modelo já incluído; não é necessário treinar novamente para testar a interface. As dependências e os comandos para Windows estão no `README.md`.
